@@ -17,10 +17,10 @@
   in:fade={{ duration: 100 }}
   out:fade={{ duration: 100 }}
   id="account-info-panel"
-  class="absolute right-[25px] top-[75px] z-[100] w-[360px] rounded-3xl bg-gray-200 shadow-lg dark:border dark:border-immich-dark-gray dark:bg-immich-dark-gray"
+  class="absolute right-[25px] top-[75px] z-[100] w-[360px] rounded-xl bg-gray-200 shadow-lg dark:border dark:border-immich-dark-gray dark:bg-immich-dark-gray"
 >
   <div
-    class="mx-4 mt-4 flex flex-col items-center justify-center gap-4 rounded-3xl bg-white p-4 dark:bg-immich-dark-primary/10"
+    class="mx-4 mt-4 flex flex-col items-center justify-center gap-4 rounded-xl bg-white p-4 dark:bg-immich-dark-primary/10"
   >
     <UserAvatar size="xl" {user} />
 
@@ -42,7 +42,7 @@
     </a>
   </div>
 
-  <div class="mb-4 flex flex-col">
+  <div class="mb-4 mt-4 flex flex-col">
     <button
       class="flex w-full place-content-center place-items-center gap-2 py-3 font-medium text-gray-500 hover:bg-immich-primary/10 dark:text-gray-300"
       on:click={() => dispatch('logout')}

@@ -87,7 +87,7 @@
   transition:fade={{ duration: 250 }}
   style:background-color={backgroundColor()}
   style:border={borderStyle()}
-  class="z-[999999] mb-4 min-h-[80px] w-[300px] rounded-2xl p-4 shadow-md hover:cursor-pointer"
+  class="z-[999999] mb-4 min-h-[80px] w-[300px] rounded-lg p-4 shadow-md hover:cursor-pointer"
   on:click={handleClick}
   on:keydown={handleClick}
 >

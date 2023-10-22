@@ -158,14 +158,14 @@
       >
         <!-- PREVIOUS MEMORY -->
         <div
-          class="h-1/2 w-[20vw] rounded-2xl"
+          class="h-1/2 w-[20vw] rounded-lg"
           class:opacity-25={previousMemory}
           class:opacity-0={!previousMemory}
           class:hover:opacity-70={previousMemory}
         >
-          <button class="relative h-full w-full rounded-2xl" disabled={!previousMemory} on:click={toPreviousMemory}>
+          <button class="relative h-full w-full rounded-lg" disabled={!previousMemory} on:click={toPreviousMemory}>
             <img
-              class="h-full w-full rounded-2xl object-cover"
+              class="h-full w-full rounded-lg object-cover"
               src={previousMemory ? api.getAssetThumbnailUrl(previousMemory.assets[0].id, 'JPEG') : noThumbnailUrl}
               alt=""
               draggable="false"
@@ -182,9 +182,9 @@
 
         <!-- CURRENT MEMORY -->
         <div
-          class="main-view relative flex h-full w-[70vw] place-content-center place-items-center rounded-2xl bg-black"
+          class="main-view relative flex h-full w-[70vw] place-content-center place-items-center rounded-lg bg-black"
         >
-          <div class="h-full w-full rounded-2xl bg-black">
+          <div class="h-full w-full rounded-lg bg-black">
             <!-- CONTROL BUTTONS -->
             <div class="absolute flex h-full w-full justify-between">
               <div class="ml-4 flex h-full flex-col place-content-center place-items-center">
@@ -206,7 +206,7 @@
             {#key currentAsset.id}
               <img
                 transition:fade
-                class="h-full w-full rounded-2xl object-contain transition-all"
+                class="h-full w-full rounded-lg object-contain transition-all"
                 src={api.getAssetThumbnailUrl(currentAsset.id, 'JPEG')}
                 alt=""
                 draggable="false"
@@ -232,9 +232,9 @@
           class:opacity-0={!nextMemory}
           class:hover:opacity-70={nextMemory}
         >
-          <button class="relative h-full w-full rounded-2xl" on:click={toNextMemory} disabled={!nextMemory}>
+          <button class="relative h-full w-full rounded-lg" on:click={toNextMemory} disabled={!nextMemory}>
             <img
-              class="h-full w-full rounded-2xl object-cover"
+              class="h-full w-full rounded-lg object-cover"
               src={nextMemory ? api.getAssetThumbnailUrl(nextMemory.assets[0].id, 'JPEG') : noThumbnailUrl}
               alt=""
               draggable="false"

@@ -22,7 +22,7 @@
 
 <FullScreenModal on:clickOutside={handleClose} on:escape={handleClose}>
   <div
-    class="flex w-96 max-w-lg flex-col gap-8 rounded-3xl border bg-white p-8 shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray"
+    class="flex w-96 max-w-lg flex-col gap-8 rounded-xl border bg-white p-8 shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray"
   >
     <h1 class="self-center text-2xl font-medium text-immich-primary dark:text-immich-dark-primary">Map Settings</h1>
 

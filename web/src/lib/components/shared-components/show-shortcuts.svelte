@@ -25,7 +25,7 @@
 <FullScreenModal on:clickOutside={() => dispatch('close')} on:escape={() => dispatch('close')}>
   <div class="flex h-full w-full place-content-center place-items-center overflow-hidden">
     <div
-      class="w-[400px] max-w-[125vw] rounded-3xl border bg-immich-bg shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray dark:text-immich-dark-fg md:w-[650px]"
+      class="w-[400px] max-w-[125vw] rounded-xl border bg-immich-bg shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray dark:text-immich-dark-fg md:w-[650px]"
     >
       <div class="relative px-4 pt-4">
         <h1 class="px-4 py-4 font-medium text-immich-primary dark:text-immich-dark-primary">Keyboard Shortcuts</h1>

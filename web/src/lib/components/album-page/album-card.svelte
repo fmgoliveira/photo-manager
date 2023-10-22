@@ -58,7 +58,7 @@
 
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
-  class="group relative mt-4 rounded-3xl border-[3px] border-transparent p-5 hover:cursor-pointer hover:border-immich-primary/75 dark:hover:border-immich-dark-primary/75"
+  class="group relative mt-4 rounded-xl border-[3px] border-transparent p-5 hover:cursor-pointer hover:border-immich-primary/75 dark:hover:border-immich-dark-primary/75"
   on:click={() => dispatchClick('click', album)}
   on:keydown={() => dispatchClick('click', album)}
   on:mouseenter={() => (showVerticalDots = true)}
@@ -84,12 +84,12 @@
     <img
       src={imageData}
       alt={album.id}
-      class={`z-0 h-full w-full rounded-3xl object-cover transition-all duration-300 hover:shadow-lg`}
+      class={`z-0 h-full w-full rounded-xl object-cover transition-all duration-300 hover:shadow-lg`}
       data-testid="album-image"
       draggable="false"
     />
     <div
-      class="absolute top-0 h-full w-full rounded-3xl {isSharingView
+      class="absolute top-0 h-full w-full rounded-xl {isSharingView
         ? 'group-hover:bg-yellow-800/25'
         : 'group-hover:bg-indigo-800/25'} "
     />

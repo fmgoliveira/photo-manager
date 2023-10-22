@@ -36,7 +36,7 @@
 </script>
 
 <div
-  class="flex flex-col overflow-hidden rounded-2xl bg-gray-100 dark:bg-immich-dark-gray sm:flex-row sm:rounded-[35px]"
+  class="flex flex-col overflow-hidden rounded-lg bg-gray-100 dark:bg-immich-dark-gray sm:flex-row sm:rounded-[35px]"
 >
   <div class="flex w-full flex-col">
     {#if queueStatus.isPaused}

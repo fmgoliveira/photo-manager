@@ -15,7 +15,7 @@
 {#if $isDownloading}
   <div
     transition:fly={{ x: -100, duration: 350 }}
-    class="absolute bottom-10 left-2 z-[10000] max-h-[270px] w-[315px] rounded-2xl border bg-immich-bg p-4 text-sm shadow-sm"
+    class="absolute bottom-10 left-2 z-[10000] max-h-[270px] w-[315px] rounded-lg border bg-immich-bg p-4 text-sm shadow-sm"
   >
     <p class="mb-2 text-xs text-gray-500">DOWNLOADING</p>
     <div class="my-2 mb-2 flex max-h-[200px] flex-col overflow-y-auto text-sm">

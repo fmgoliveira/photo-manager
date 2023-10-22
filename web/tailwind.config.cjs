@@ -6,8 +6,8 @@ module.exports = {
     extend: {
       colors: {
         // Light Theme
-        'immich-primary': '#4250af',
-        'immich-bg': 'white',
+        'immich-primary': '#1565c0',
+        'immich-bg': '#FAF9F6',
         'immich-fg': 'black',
         'immich-gray': '#F6F6F4',
         'immich-error': '#e57373',
@@ -15,8 +15,8 @@ module.exports = {
         'immich-warning': '#ffb74d',
 
         // Dark Theme
-        'immich-dark-primary': '#adcbfa',
-        'immich-dark-bg': 'black',
+        'immich-dark-primary': '#649fe3',
+        'immich-dark-bg': '#202124',
         'immich-dark-fg': '#e5e7eb',
         'immich-dark-gray': '#212121',
         'immich-dark-error': '#d32f2f',

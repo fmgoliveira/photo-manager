@@ -63,7 +63,7 @@
     color
   ]} {sizeClasses[size]}"
   class:rounded-lg={rounded === 'lg'}
-  class:rounded-3xl={rounded === '3xl'}
+  class:rounded-xl={rounded === '3xl'}
   class:rounded-full={rounded === 'full'}
   class:shadow-md={shadow === 'md'}
   class:w-full={fullwidth}

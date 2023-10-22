@@ -71,7 +71,7 @@
   {#if showMenu}
     <div
       transition:fly={{ y: -30, x: 30, duration: 200 }}
-      class="text-md absolute right-0 top-5 z-50 flex min-w-[250px] flex-col rounded-2xl bg-gray-100 py-4 text-black shadow-lg dark:bg-gray-700 dark:text-white"
+      class="text-md absolute right-0 top-5 z-50 flex min-w-[250px] flex-col rounded-lg bg-gray-100 py-4 text-black shadow-lg dark:bg-gray-700 dark:text-white"
     >
       {#each options as option (option)}
         {@const renderedOption = renderOption(option)}

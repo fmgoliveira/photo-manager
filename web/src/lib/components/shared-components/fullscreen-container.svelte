@@ -7,7 +7,7 @@
 
 <section class="min-w-screen flex min-h-screen place-content-center place-items-center p-4">
   <div
-    class="flex w-full max-w-lg flex-col gap-4 rounded-3xl border bg-white p-8 shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray"
+    class="flex w-full max-w-lg flex-col gap-4 rounded-xl border bg-white p-8 shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray"
   >
     <div class="flex flex-col place-content-center place-items-center gap-4 py-4">
       <ImmichLogo class="h-24 w-24" />

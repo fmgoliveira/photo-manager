@@ -35,7 +35,7 @@
       <StatsCard logo={Memory} title="STORAGE" value={statsUsage} unit={statsUsageUnit} />
     </div>
     <div class="mt-5 flex lg:hidden">
-      <div class="flex flex-col justify-between rounded-3xl bg-immich-gray p-5 dark:bg-immich-dark-gray">
+      <div class="flex flex-col justify-between rounded-xl bg-immich-gray p-5 dark:bg-immich-dark-gray">
         <div class="flex flex-wrap gap-x-12">
           <div class="flex place-items-center gap-4 text-immich-primary dark:text-immich-dark-primary">
             <CameraIris size="25" />

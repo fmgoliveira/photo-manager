@@ -33,7 +33,7 @@
 <FullScreenModal on:clickOutside={() => dispatch('close')}>
   <div class="flex h-full w-full place-content-center place-items-center overflow-hidden">
     <div
-      class="w-[250px] max-w-[125vw] rounded-3xl border bg-immich-bg shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray dark:text-immich-dark-fg md:w-[375px]"
+      class="w-[250px] max-w-[125vw] rounded-xl border bg-immich-bg shadow-sm dark:border-immich-dark-gray dark:bg-immich-dark-gray dark:text-immich-dark-fg md:w-[375px]"
     >
       <div class="relative flex items-center justify-between">
         <h1 class="truncate px-4 py-4 font-medium text-immich-primary dark:text-immich-dark-primary">

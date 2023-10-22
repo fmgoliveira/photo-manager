@@ -47,7 +47,7 @@
         {#if showMoreInformation}
           <div class="absolute right-6 top-0">
             <div
-              class="flex place-content-center place-items-center whitespace-nowrap rounded-3xl border bg-immich-bg px-6 py-3 text-xs text-immich-fg shadow-lg dark:border-immich-dark-gray dark:bg-gray-600 dark:text-immich-dark-fg"
+              class="flex place-content-center place-items-center whitespace-nowrap rounded-xl border bg-immich-bg px-6 py-3 text-xs text-immich-fg shadow-lg dark:border-immich-dark-gray dark:bg-gray-600 dark:text-immich-dark-fg"
               class:hidden={!showMoreInformation}
               transition:fade={{ duration: 200 }}
             >
