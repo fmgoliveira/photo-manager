@@ -18,7 +18,7 @@ services:
 
   immich-microservices:
     container_name: immich_microservices
-    image: ghcr.io/fmgoliveira/immich-server:${IMMICH_VERSION:-release}
+    image: ghcr.io/immich-app/immich-server:${IMMICH_VERSION:-release}
     # extends:
     #   file: hwaccel.yml
     #   service: hwaccel
