@@ -108,12 +108,12 @@
       <div
         class="absolute h-full w-full select-none bg-gray-100 transition-transform dark:bg-immich-dark-gray"
         class:scale-[0.85]={selected}
-        class:rounded-xl={selected}
+        class:rounded-md={selected}
       >
         <!-- Gradient overlay on hover -->
         <div
           class="absolute z-10 h-full w-full bg-gradient-to-b from-black/25 via-[transparent_25%] opacity-0 transition-opacity group-hover:opacity-100"
-          class:rounded-xl={selected}
+          class:rounded-md={selected}
         />
 
         <!-- Favorite asset star -->

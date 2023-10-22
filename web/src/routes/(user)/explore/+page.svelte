@@ -68,7 +68,7 @@
         {#each places as item}
           <a class="relative" href="/search?{Field.CITY}={item.value}" draggable="false">
             <div
-              class="flex w-[calc((100vw-(72px+5rem))/2)] max-w-[156px] justify-center overflow-hidden rounded-xl brightness-75 filter"
+              class="flex w-[calc((100vw-(72px+5rem))/2)] max-w-[156px] justify-center overflow-hidden rounded-md brightness-75 filter"
             >
               <Thumbnail thumbnailSize={156} asset={item.data} readonly />
             </div>
@@ -92,7 +92,7 @@
         {#each things as item}
           <a class="relative" href="/search?{Field.OBJECTS}={item.value}" draggable="false">
             <div
-              class="flex w-[calc((100vw-(72px+5rem))/2)] max-w-[156px] justify-center overflow-hidden rounded-xl brightness-75 filter"
+              class="flex w-[calc((100vw-(72px+5rem))/2)] max-w-[156px] justify-center overflow-hidden rounded-md brightness-75 filter"
             >
               <Thumbnail thumbnailSize={156} asset={item.data} readonly />
             </div>

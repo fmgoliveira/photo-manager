@@ -32,7 +32,7 @@
   class="object-cover transition duration-300 {border
     ? 'border-[3px] border-immich-dark-primary/80 hover:border-immich-primary'
     : ''}"
-  class:rounded-xl={curve}
+  class:rounded-md={curve}
   class:shadow-lg={shadow}
   class:rounded-full={circle}
   class:opacity-0={!thumbhash && !complete}
@@ -55,7 +55,7 @@
     alt={altText}
     {title}
     class="absolute top-0 object-cover"
-    class:rounded-xl={curve}
+    class:rounded-md={curve}
     class:shadow-lg={shadow}
     class:rounded-full={circle}
     draggable="false"

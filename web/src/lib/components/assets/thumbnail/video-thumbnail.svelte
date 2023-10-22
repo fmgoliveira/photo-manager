@@ -69,7 +69,7 @@
   <video
     bind:this={player}
     class="h-full w-full object-cover"
-    class:rounded-xl={curve}
+    class:rounded-md={curve}
     muted
     autoplay
     src={url}

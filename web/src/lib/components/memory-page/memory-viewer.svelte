@@ -227,7 +227,7 @@
 
         <!-- NEXT MEMORY -->
         <div
-          class="h-1/2 w-[20vw] rounded-xl"
+          class="h-1/2 w-[20vw] rounded-md"
           class:opacity-25={nextMemory}
           class:opacity-0={!nextMemory}
           class:hover:opacity-70={nextMemory}

@@ -90,7 +90,7 @@ describe(`${AuthController.name} (e2e)`, () => {
     it('should transform email to lower case', async () => {
       const { status, body } = await request(server)
         .post('/auth/admin-sign-up')
-        .send({ ...adminSignupStub, email: 'aDmIn@IMMICH.app' });
+        .send({ ...adminSignupStub, email: 'aDmIn@PICS.app' });
       expect(status).toEqual(201);
       expect(body).toEqual(signupResponseStub);
     });

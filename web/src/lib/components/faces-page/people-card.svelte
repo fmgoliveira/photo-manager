@@ -44,7 +44,7 @@
   role="group"
 >
   <a href="/people/{person.id}?previousRoute={AppRoute.PEOPLE}" draggable="false">
-    <div class="h-48 w-48 rounded-xl brightness-95 filter">
+    <div class="h-48 w-48 rounded-md brightness-95 filter">
       <ImageThumbnail
         shadow
         url={api.getPeopleThumbnailUrl(person.id)}

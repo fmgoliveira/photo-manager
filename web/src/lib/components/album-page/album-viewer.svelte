@@ -113,7 +113,7 @@
           href="https://immich.app"
         >
           <ImmichLogo height={30} width={30} />
-          <h1 class="font-immich-title text-lg text-immich-primary dark:text-immich-dark-primary">IMMICH</h1>
+          <h1 class=" text-lg text-immich-primary dark:text-immich-dark-primary">PICS</h1>
         </a>
       </svelte:fragment>
 

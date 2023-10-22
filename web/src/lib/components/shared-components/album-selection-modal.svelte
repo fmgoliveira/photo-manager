@@ -60,7 +60,7 @@
     {#if loading}
       {#each { length: 3 } as _}
         <div class="flex animate-pulse gap-4 px-6 py-2">
-          <div class="h-12 w-12 rounded-xl bg-slate-200" />
+          <div class="h-12 w-12 rounded-md bg-slate-200" />
           <div class="flex flex-col items-start justify-center gap-2">
             <span class="h-4 w-36 animate-pulse bg-slate-200" />
             <div class="flex animate-pulse gap-1">

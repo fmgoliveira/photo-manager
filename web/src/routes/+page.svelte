@@ -9,8 +9,8 @@
     <div class="flex place-content-center place-items-center">
       <ImmichLogo class="text-center" height="200" width="200" />
     </div>
-    <h1 class="font-immich-title text-4xl font-bold text-immich-primary dark:text-immich-dark-primary">
-      Welcome to IMMICH Web
+    <h1 class=" text-4xl font-bold text-immich-primary dark:text-immich-dark-primary">
+      Welcome to PICS Web
     </h1>
     <Button size="lg" rounded="lg" on:click={() => goto('/auth/register')}>
       <span class="px-2 font-bold">Getting Started</span>

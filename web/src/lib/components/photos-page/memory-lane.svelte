@@ -70,18 +70,18 @@
     <div class="inline-block" bind:offsetWidth={innerWidth}>
       {#each $memoryStore as memory, i (memory.title)}
         <button
-          class="memory-card relative mr-8 inline-block aspect-video h-[215px] rounded-xl"
+          class="memory-card relative mr-8 inline-block aspect-video h-[215px] rounded-md"
           on:click={() => goto(`/memory?memory=${i}`)}
         >
           <img
-            class="h-full w-full rounded-xl object-cover"
+            class="h-full w-full rounded-md object-cover"
             src={api.getAssetThumbnailUrl(memory.assets[0].id, 'JPEG')}
             alt={memory.title}
             draggable="false"
           />
           <p class="absolute bottom-2 left-4 z-10 text-lg text-white">{memory.title}</p>
           <div
-            class="absolute left-0 top-0 z-0 h-full w-full rounded-xl bg-gradient-to-t from-black/40 via-transparent to-transparent transition-all hover:bg-black/20"
+            class="absolute left-0 top-0 z-0 h-full w-full rounded-md bg-gradient-to-t from-black/40 via-transparent to-transparent transition-all hover:bg-black/20"
           />
         </button>
       {/each}

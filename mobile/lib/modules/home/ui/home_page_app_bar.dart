@@ -99,7 +99,7 @@ class HomePageAppBar extends ConsumerWidget implements PreferredSizeWidget {
         },
       ),
       title: const Text(
-        'IMMICH',
+        'PICS',
         style: TextStyle(
           fontFamily: 'SnowburstOne',
           fontWeight: FontWeight.bold,
