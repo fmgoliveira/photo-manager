@@ -1,7 +1,7 @@
 import { AuthUserDto } from '@app/domain';
 
 export const adminSignupStub = {
-  firstName: 'Immich',
+  firstName: 'Pics',
   lastName: 'Admin',
   email: 'admin@immich.app',
   password: 'Password123',
@@ -15,7 +15,7 @@ export const userSignupStub = {
 export const signupResponseStub = {
   id: expect.any(String),
   email: 'admin@immich.app',
-  firstName: 'Immich',
+  firstName: 'Pics',
   lastName: 'Admin',
   createdAt: expect.any(String),
 };
@@ -111,7 +111,7 @@ export const loginResponseStub = {
   admin: {
     response: {
       accessToken: expect.any(String),
-      firstName: 'Immich',
+      firstName: 'Pics',
       isAdmin: true,
       lastName: 'Admin',
       profileImagePath: '',

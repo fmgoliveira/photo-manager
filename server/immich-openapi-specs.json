@@ -5412,8 +5412,8 @@
     }
   },
   "info": {
-    "title": "Immich",
-    "description": "Immich API",
+    "title": "Pics",
+    "description": "Pics API",
     "version": "1.82.1",
     "contact": {}
   },

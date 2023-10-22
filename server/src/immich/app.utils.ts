@@ -89,8 +89,8 @@ const patchOpenAPI = (document: OpenAPIObject) => {
 
 export const useSwagger = (app: INestApplication, isDev: boolean) => {
   const config = new DocumentBuilder()
-    .setTitle('Immich')
-    .setDescription('Immich API')
+    .setTitle('Pics')
+    .setDescription('Pics API')
     .setVersion(SERVER_VERSION)
     .addBearerAuth({
       type: 'http',
@@ -119,7 +119,7 @@ export const useSwagger = (app: INestApplication, isDev: boolean) => {
     swaggerOptions: {
       persistAuthorization: true,
     },
-    customSiteTitle: 'Immich API Documentation',
+    customSiteTitle: 'Pics API Documentation',
   };
 
   SwaggerModule.setup('doc', app, doc, customOptions);

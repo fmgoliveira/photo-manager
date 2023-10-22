@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-<img src="design/immich-logo.svg" width="150" title="Login With Custom URL">
+<img src="design/immich-logo.png" width="150" title="Login With Custom URL">
 </p>
-<h3 align="center">Immich - Soluzione self-hosted ad alte prestazioni per backup di foto e video</h3>
+<h3 align="center">Pics - Soluzione self-hosted ad alte prestazioni per backup di foto e video</h3>
 <br/>
 <a href="https://immich.app">
 <img src="design/immich-screenshots.png" title="Main Screenshot">
@@ -102,7 +102,7 @@ Mi dedico al progetto e non smetterò di farlo. Manterrò aggiornata la document
 
 Come detto dal nostro host [selfhosted.show - Nell'episodio 'The-organization-must-not-be-name is a Hostile Actor'](https://selfhosted.show/79?t=1418), quello che il team ed io stiamo facendo è un lavoro enorme. Mi piacerebbe dedicarmi al progetto full-time e chiedo il tuo aiuto affinchè sia possibile.
 
-Se pensi che Immich sia una buona causa e che l'app sia qualcosa che useresti nel lungo termine, sappi che puoi supportare il progetto scegliendo tra le opzioni sotto elencate.
+Se pensi che Pics sia una buona causa e che l'app sia qualcosa che useresti nel lungo termine, sappi che puoi supportare il progetto scegliendo tra le opzioni sotto elencate.
 
 ## Donazioni
 

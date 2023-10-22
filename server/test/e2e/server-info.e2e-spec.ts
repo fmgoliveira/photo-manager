@@ -133,7 +133,7 @@ describe(`${ServerInfoController.name} (e2e)`, () => {
           {
             photos: 0,
             usage: 0,
-            userFirstName: 'Immich',
+            userFirstName: 'Pics',
             userId: loginResponse.userId,
             userLastName: 'Admin',
             videos: 0,

@@ -1,1 +1,1 @@
-# Immich Mobile Application - Flutter
+# Pics Mobile Application - Flutter

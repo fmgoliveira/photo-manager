@@ -14,7 +14,7 @@ import {
 import { testApp } from '@test/test-utils';
 import request from 'supertest';
 
-const firstName = 'Immich';
+const firstName = 'Pics';
 const lastName = 'Admin';
 const password = 'Password123';
 const email = 'admin@immich.app';

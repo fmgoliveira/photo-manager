@@ -9,11 +9,11 @@
 </p>
 
 <p align="center">
-<img src="design/immich-logo.svg" width="150" title="Login With Custom URL">
+<img src="design/immich-logo.png" width="150" title="Login With Custom URL">
 </p>
-<h3 align="center">Immich - 高性能的自托管照片和视频备份方案</h3>
+<h3 align="center">Pics - 高性能的自托管照片和视频备份方案</h3>
 <p align="center">  
-请注意: 此 README 不是由 Immich 团队维护, 而是依靠贡献者来更新的，这意味着它可能并不会被及时更新。感谢理解。
+请注意: 此 README 不是由 Pics 团队维护, 而是依靠贡献者来更新的，这意味着它可能并不会被及时更新。感谢理解。
 </p>
 <br/>
 <a href="https://immich.app">

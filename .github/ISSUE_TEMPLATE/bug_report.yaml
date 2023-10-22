@@ -1,5 +1,5 @@
-name: Report an issue with Immich
-description: Report an issue with Immich
+name: Report an issue with Pics
+description: Report an issue with Pics
 labels: ["bug", "need triage"]
 title: "[BUG] <title>"
 body:
@@ -32,7 +32,7 @@ body:
     validations:
       required: true
     attributes:
-      label: The OS that Immich Server is running on
+      label: The OS that Pics Server is running on
       placeholder: Ubuntu 22.10, Debian, Arch...etc
 
   - type: input
@@ -40,14 +40,14 @@ body:
     validations:
       required: true
     attributes:
-      label: Version of Immich Server
+      label: Version of Pics Server
       placeholder: v1.0.0
 
   - type: input
     validations:
       required: true
     attributes:
-      label: Version of Immich Mobile App
+      label: Version of Pics Mobile App
       placeholder: v1.0.0
 
   - type: checkboxes

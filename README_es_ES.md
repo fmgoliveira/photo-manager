@@ -9,9 +9,9 @@
 </p>
 
 <p align="center">
-<img src="design/immich-logo.svg" width="150" title="Iniciar sesión con URL personalizada">
+<img src="design/immich-logo.png" width="150" title="Iniciar sesión con URL personalizada">
 </p>
-<h3 align="center">Immich: Una solución Self-Hosted de copia de seguridad de fotos y videos de alto rendimiento</h3>
+<h3 align="center">Pics: Una solución Self-Hosted de copia de seguridad de fotos y videos de alto rendimiento</h3>
 <br/>
 <a href="https://immich.app">
 <img src="design/immich-screenshots.png" title="Captura de pantalla principal">

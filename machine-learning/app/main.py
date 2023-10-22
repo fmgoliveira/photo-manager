@@ -45,7 +45,7 @@ async def startup_event() -> None:
 
 @app.get("/", response_model=MessageResponse)
 async def root() -> dict[str, str]:
-    return {"message": "Immich ML"}
+    return {"message": "Pics ML"}
 
 
 @app.get("/ping", response_model=TextResponse)

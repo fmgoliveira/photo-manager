@@ -73,7 +73,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                               .tr(),
                                     ),
                                     const TextSpan(
-                                      text: ' Immich ',
+                                      text: ' Pics ',
                                       style: TextStyle(
                                         fontFamily: "SnowBurstOne",
                                         color: Colors.indigo,

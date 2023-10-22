@@ -3,7 +3,7 @@ import Upload from './commands/upload';
 import ServerInfo from './commands/server-info';
 import LoginKey from './commands/login/key';
 
-program.name('immich').description('Immich command line interface');
+program.name('immich').description('Pics command line interface');
 
 program
   .command('upload')
@@ -35,7 +35,7 @@ program
       .default(false),
   )
   .addOption(new Option('-i, --ignore [paths...]', 'Paths to ignore').env('IMMICH_IGNORE_PATHS').default(false))
-  .addOption(new Option('--no-read-only', 'Import files without read-only protection, allowing Immich to manage them'))
+  .addOption(new Option('--no-read-only', 'Import files without read-only protection, allowing Pics to manage them'))
   .argument('[paths...]', 'One or more paths to assets to be imported')
   .action(async (paths, options) => {
     options.import = true;

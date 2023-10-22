@@ -1,8 +1,8 @@
 /* tslint:disable */
 /* eslint-disable */
 /**
- * Immich
- * Immich API
+ * Pics
+ * Pics API
  *
  * The version of the OpenAPI document: 1.82.1
  * 

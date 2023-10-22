@@ -1,4 +1,4 @@
-A command-line interface for interfacing with Immich
+A command-line interface for interfacing with Pics
 
 # Getting started
 
@@ -23,7 +23,7 @@ When you're done, log out to remove the credentials from your filesystem
 ```
 Usage: immich [options] [command]
 
-Immich command line interface
+Pics command line interface
 
 Options:
   -h, --help                        display help for command

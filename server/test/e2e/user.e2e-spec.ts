@@ -149,7 +149,7 @@ describe(`${UserController.name}`, () => {
           isAdmin: true,
           email: 'user1@immich.app',
           password: 'Password123',
-          firstName: 'Immich',
+          firstName: 'Pics',
           lastName: 'User',
         })
         .set('Authorization', `Bearer ${accessToken}`);
@@ -246,7 +246,7 @@ describe(`${UserController.name}`, () => {
       const user = await api.userApi.create(server, accessToken, {
         email: 'user1@immich.app',
         password: 'Password123',
-        firstName: 'Immich',
+        firstName: 'Pics',
         lastName: 'User',
       });
 

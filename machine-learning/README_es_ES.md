@@ -1,4 +1,4 @@
-# Immich Machine Learning
+# Pics Machine Learning
 
 - Clasificación de imágenes
 - Incorporación de CLIP

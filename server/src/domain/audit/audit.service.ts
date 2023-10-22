@@ -71,7 +71,7 @@ export class AuditService {
     for (const filename of dto.filenames) {
       if (!StorageCore.isImmichPath(filename)) {
         throw new BadRequestException(
-          `Could not get the checksum of ${filename} because the file isn't accessible by Immich`,
+          `Could not get the checksum of ${filename} because the file isn't accessible by Pics`,
         );
       }
 
@@ -85,7 +85,7 @@ export class AuditService {
     for (const { entityId: id, pathType, pathValue } of items) {
       if (!StorageCore.isImmichPath(pathValue)) {
         throw new BadRequestException(
-          `Could not fix item ${id} with path ${pathValue} because the file isn't accessible by Immich`,
+          `Could not fix item ${id} with path ${pathValue} because the file isn't accessible by Pics`,
         );
       }
 

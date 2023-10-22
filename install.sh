@@ -1,4 +1,4 @@
-echo "Starting Immich installation..."
+echo "Starting Pics installation..."
 
 ip_address=$(hostname -I | awk '{print $1}')
 
@@ -7,19 +7,19 @@ GREEN='\032[0;31m'
 NC='\033[0m' # No Color
 
 create_immich_directory() {
-  echo "Creating Immich directory..."
+  echo "Creating Pics directory..."
   mkdir -p ./immich-app/immich-data
   cd ./immich-app
 }
 
 download_docker_compose_file() {
   echo "Downloading docker-compose.yml..."
-  curl -L https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml -o ./docker-compose.yml >/dev/null 2>&1
+  curl -L https://github.com/fmgoliveira/photo-manager/releases/latest/download/docker-compose.yml -o ./docker-compose.yml >/dev/null 2>&1
 }
 
 download_dot_env_file() {
   echo "Downloading .env file..."
-  curl -L https://github.com/immich-app/immich/releases/latest/download/example.env -o ./.env >/dev/null 2>&1
+  curl -L https://github.com/fmgoliveira/photo-manager/releases/latest/download/example.env -o ./.env >/dev/null 2>&1
 }
 
 replace_env_value() {
@@ -37,7 +37,7 @@ populate_upload_location() {
 }
 
 start_docker_compose() {
-  echo "Starting Immich's docker containers"
+  echo "Starting Pics's docker containers"
 
   if docker compose &>/dev/null; then
     docker_bin="docker compose"
@@ -58,7 +58,7 @@ start_docker_compose() {
 }
 
 show_friendly_message() {
-  echo "Succesfully deployed Immich!"
+  echo "Succesfully deployed Pics!"
   echo "You can access the website at http://$ip_address:2283 and the server URL for the mobile app is http://$ip_address:2283/api"
   echo "The library location is $upload_location"
   echo "---------------------------------------------------"

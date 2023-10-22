@@ -29,5 +29,5 @@ export async function bootstrap() {
   const server = await app.listen(port);
   server.requestTimeout = 30 * 60 * 1000;
 
-  logger.log(`Immich Server is listening on ${await app.getUrl()} [v${SERVER_VERSION}] [${envName}] `);
+  logger.log(`Pics Server is listening on ${await app.getUrl()} [v${SERVER_VERSION}] [${envName}] `);
 }

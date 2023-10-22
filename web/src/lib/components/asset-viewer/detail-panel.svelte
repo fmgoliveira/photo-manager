@@ -103,7 +103,7 @@
         <div class="rounded-t bg-red-500 px-4 py-2 font-bold text-white">Asset offline</div>
         <div class="rounded-b border border-t-0 border-red-400 bg-red-100 px-4 py-3 text-red-700">
           <p>
-            This asset is offline. Immich can not access its file location. Please ensure the asset is available and
+            This asset is offline. Pics can not access its file location. Please ensure the asset is available and
             then rescan the library.
           </p>
         </div>

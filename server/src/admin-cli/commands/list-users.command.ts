@@ -4,7 +4,7 @@ import { CLI_USER } from '../constants';
 
 @Command({
   name: 'list-users',
-  description: 'List Immich users',
+  description: 'List Pics users',
 })
 export class ListUsersCommand extends CommandRunner {
   constructor(private userService: UserService) {

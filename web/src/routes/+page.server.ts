@@ -20,7 +20,7 @@ export const load = (async ({ parent, locals: { api } }) => {
   return {
     meta: {
       title: 'Welcome 🎉',
-      description: 'Immich Web Interface',
+      description: 'Pics Web Interface',
     },
   };
 }) satisfies PageServerLoad;
