@@ -53,7 +53,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                 fontSize: 16,
                                 fontFamily: 'WorkSans',
                                 fontWeight: FontWeight.bold,
-                                color: const Color(0x1565c0ff),
+                                color: Color(0x1565c0ff),
                               ),
                             ).tr(),
                             Padding(
@@ -76,7 +76,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                       text: ' Pics ',
                                       style: TextStyle(
                                         fontFamily: "SnowBurstOne",
-                                        color: const Color(0x1565c0ff),
+                                        color: Color(0x1565c0ff),
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
