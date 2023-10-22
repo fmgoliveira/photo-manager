@@ -138,7 +138,7 @@ class HomePageAppBar extends ConsumerWidget implements PreferredSizeWidget {
                       label: const Icon(
                         Icons.cloud_off_rounded,
                         size: 8,
-                        color: Colors.indigo,
+                        color: Color(0x1565c0),
                       ),
                       child: Icon(
                         Icons.backup_rounded,

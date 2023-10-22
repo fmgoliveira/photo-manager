@@ -53,7 +53,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                 fontSize: 16,
                                 fontFamily: 'WorkSans',
                                 fontWeight: FontWeight.bold,
-                                color: Colors.indigo,
+                                color: Color(0x1565c0),
                               ),
                             ).tr(),
                             Padding(
@@ -76,7 +76,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                       text: ' Pics ',
                                       style: TextStyle(
                                         fontFamily: "SnowBurstOne",
-                                        color: Colors.indigo,
+                                        color: Color(0x1565c0),
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
@@ -110,7 +110,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                 style: ElevatedButton.styleFrom(
                                   shape: const StadiumBorder(),
                                   visualDensity: VisualDensity.standard,
-                                  backgroundColor: Colors.indigo,
+                                  backgroundColor: Color(0x1565c0),
                                   foregroundColor: Colors.grey[50],
                                   elevation: 2,
                                   padding: const EdgeInsets.symmetric(

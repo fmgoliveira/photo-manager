@@ -33,11 +33,11 @@ ThemeData base = ThemeData(
 ThemeData immichLightTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.light,
-  primarySwatch: Colors.indigo,
-  primaryColor: Colors.indigo,
-  hintColor: Colors.indigo,
-  focusColor: Colors.indigo,
-  splashColor: Colors.indigo.withOpacity(0.15),
+  primarySwatch: Color(0x1565c0),
+  primaryColor: Color(0x1565c0),
+  hintColor: Color(0x1565c0),
+  focusColor: Color(0x1565c0),
+  splashColor: Color(0x1565c0).withOpacity(0.15),
   fontFamily: 'WorkSans',
   scaffoldBackgroundColor: immichBackgroundColor,
   snackBarTheme: const SnackBarThemeData(
@@ -46,12 +46,12 @@ ThemeData immichLightTheme = ThemeData(
   appBarTheme: AppBarTheme(
     titleTextStyle: const TextStyle(
       fontFamily: 'WorkSans',
-      color: Colors.indigo,
+      color: Color(0x1565c0),
       fontWeight: FontWeight.bold,
       fontSize: 18,
     ),
     backgroundColor: immichBackgroundColor,
-    foregroundColor: Colors.indigo,
+    foregroundColor: Color(0x1565c0),
     elevation: 0,
     scrolledUnderElevation: 0,
     centerTitle: true,
@@ -59,7 +59,7 @@ ThemeData immichLightTheme = ThemeData(
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
     type: BottomNavigationBarType.fixed,
     backgroundColor: immichBackgroundColor,
-    selectedItemColor: Colors.indigo,
+    selectedItemColor: Color(0x1565c0),
   ),
   cardTheme: const CardTheme(
     surfaceTintColor: Colors.transparent,
@@ -71,7 +71,7 @@ ThemeData immichLightTheme = ThemeData(
     displayLarge: TextStyle(
       fontSize: 26,
       fontWeight: FontWeight.bold,
-      color: Colors.indigo,
+      color: Color(0x1565c0),
     ),
     displayMedium: TextStyle(
       fontSize: 14,
@@ -81,7 +81,7 @@ ThemeData immichLightTheme = ThemeData(
     displaySmall: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.bold,
-      color: Colors.indigo,
+      color: Color(0x1565c0),
     ),
     titleSmall: TextStyle(
       fontSize: 16.0,
@@ -98,7 +98,7 @@ ThemeData immichLightTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Color(0x1565c0),
       foregroundColor: Colors.white,
     ),
   ),
@@ -112,7 +112,7 @@ ThemeData immichLightTheme = ThemeData(
     color: Colors.white,
   ),
   navigationBarTheme: NavigationBarThemeData(
-    indicatorColor: Colors.indigo.withOpacity(0.15),
+    indicatorColor: Color(0x1565c0).withOpacity(0.15),
     iconTheme: MaterialStatePropertyAll(
       IconThemeData(color: Colors.grey[700]),
     ),
@@ -132,11 +132,11 @@ ThemeData immichLightTheme = ThemeData(
   inputDecorationTheme: const InputDecorationTheme(
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Colors.indigo,
+        color: Color(0x1565c0),
       ),
     ),
     labelStyle: TextStyle(
-      color: Colors.indigo,
+      color: Color(0x1565c0),
     ),
     hintStyle: TextStyle(
       fontSize: 14.0,
@@ -144,14 +144,14 @@ ThemeData immichLightTheme = ThemeData(
     ),
   ),
   textSelectionTheme: const TextSelectionThemeData(
-    cursorColor: Colors.indigo,
+    cursorColor: Color(0x1565c0),
   ),
 );
 
 ThemeData immichDarkTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.dark,
-  primarySwatch: Colors.indigo,
+  primarySwatch: Color(0x1565c0),
   primaryColor: immichDarkThemePrimaryColor,
   scaffoldBackgroundColor: immichDarkBackgroundColor,
   hintColor: Colors.grey[600],
