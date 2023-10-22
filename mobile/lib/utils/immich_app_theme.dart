@@ -30,14 +30,30 @@ ThemeData base = ThemeData(
   ),
 );
 
+Map<int, Color> color =
+{
+  50:Color.fromRGBO(21, 101, 192, .1),
+  100:Color.fromRGBO(21, 101, 192, .2),
+  200:Color.fromRGBO(21, 101, 192, .3),
+  300:Color.fromRGBO(21, 101, 192, .4),
+  400:Color.fromRGBO(21, 101, 192, .5),
+  500:Color.fromRGBO(21, 101, 192, .6),
+  600:Color.fromRGBO(21, 101, 192, .7),
+  700:Color.fromRGBO(21, 101, 192, .8),
+  800:Color.fromRGBO(21, 101, 192, .9),
+  900:Color.fromRGBO(21, 101, 192, 1),
+};
+
+MaterialColor colorCustom = MaterialColor(0x1565c0ff, color);
+
 ThemeData immichLightTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.light,
-  primarySwatch: Color(0x1565c0),
-  primaryColor: Color(0x1565c0),
-  hintColor: Color(0x1565c0),
-  focusColor: Color(0x1565c0),
-  splashColor: Color(0x1565c0).withOpacity(0.15),
+  primarySwatch: colorCustom,
+  primaryColor: colorCustom,
+  hintColor: colorCustom,
+  focusColor: colorCustom,
+  splashColor: colorCustom.withOpacity(0.15),
   fontFamily: 'WorkSans',
   scaffoldBackgroundColor: immichBackgroundColor,
   snackBarTheme: const SnackBarThemeData(
@@ -46,12 +62,12 @@ ThemeData immichLightTheme = ThemeData(
   appBarTheme: AppBarTheme(
     titleTextStyle: const TextStyle(
       fontFamily: 'WorkSans',
-      color: Color(0x1565c0),
+      color: colorCustom,
       fontWeight: FontWeight.bold,
       fontSize: 18,
     ),
     backgroundColor: immichBackgroundColor,
-    foregroundColor: Color(0x1565c0),
+    foregroundColor: colorCustom,
     elevation: 0,
     scrolledUnderElevation: 0,
     centerTitle: true,
@@ -59,7 +75,7 @@ ThemeData immichLightTheme = ThemeData(
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
     type: BottomNavigationBarType.fixed,
     backgroundColor: immichBackgroundColor,
-    selectedItemColor: Color(0x1565c0),
+    selectedItemColor: colorCustom,
   ),
   cardTheme: const CardTheme(
     surfaceTintColor: Colors.transparent,
@@ -71,7 +87,7 @@ ThemeData immichLightTheme = ThemeData(
     displayLarge: TextStyle(
       fontSize: 26,
       fontWeight: FontWeight.bold,
-      color: Color(0x1565c0),
+      color: colorCustom,
     ),
     displayMedium: TextStyle(
       fontSize: 14,
@@ -81,7 +97,7 @@ ThemeData immichLightTheme = ThemeData(
     displaySmall: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.bold,
-      color: Color(0x1565c0),
+      color: colorCustom,
     ),
     titleSmall: TextStyle(
       fontSize: 16.0,
@@ -98,7 +114,7 @@ ThemeData immichLightTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: Color(0x1565c0),
+      backgroundColor: colorCustom,
       foregroundColor: Colors.white,
     ),
   ),
@@ -112,7 +128,7 @@ ThemeData immichLightTheme = ThemeData(
     color: Colors.white,
   ),
   navigationBarTheme: NavigationBarThemeData(
-    indicatorColor: Color(0x1565c0).withOpacity(0.15),
+    indicatorColor: colorCustom.withOpacity(0.15),
     iconTheme: MaterialStatePropertyAll(
       IconThemeData(color: Colors.grey[700]),
     ),
@@ -132,11 +148,11 @@ ThemeData immichLightTheme = ThemeData(
   inputDecorationTheme: const InputDecorationTheme(
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Color(0x1565c0),
+        color: colorCustom,
       ),
     ),
     labelStyle: TextStyle(
-      color: Color(0x1565c0),
+      color: colorCustom,
     ),
     hintStyle: TextStyle(
       fontSize: 14.0,
@@ -144,14 +160,14 @@ ThemeData immichLightTheme = ThemeData(
     ),
   ),
   textSelectionTheme: const TextSelectionThemeData(
-    cursorColor: Color(0x1565c0),
+    cursorColor: colorCustom,
   ),
 );
 
 ThemeData immichDarkTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.dark,
-  primarySwatch: Color(0x1565c0),
+  primarySwatch: colorCustom,
   primaryColor: immichDarkThemePrimaryColor,
   scaffoldBackgroundColor: immichDarkBackgroundColor,
   hintColor: Colors.grey[600],

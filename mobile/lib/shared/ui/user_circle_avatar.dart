@@ -32,7 +32,7 @@ class UserCircleAvatar extends ConsumerWidget {
       Colors.orange[200],
       Colors.pink[200],
       Colors.teal[200],
-      Color(0x1565c0)[200],
+      Colors.indigo[200],
       Colors.cyan[200],
       Colors.brown[200],
     ];
