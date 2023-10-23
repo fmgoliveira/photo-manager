@@ -15,7 +15,7 @@ class ImmichTitleText extends StatelessWidget {
     return Text(
       'PICS',
       style: TextStyle(
-        fontFamily: 'SnowburstOne',
+        fontFamily: 'WorkSans',
         fontWeight: FontWeight.bold,
         fontSize: fontSize,
         color: color ?? Theme.of(context).primaryColor,

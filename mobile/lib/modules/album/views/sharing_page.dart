@@ -174,7 +174,7 @@ class SharingPage extends HookConsumerWidget {
         title: const Text(
           'PICS',
           style: TextStyle(
-            fontFamily: 'SnowburstOne',
+            fontFamily: 'WorkSans',
             fontWeight: FontWeight.bold,
             fontSize: 22,
           ),
