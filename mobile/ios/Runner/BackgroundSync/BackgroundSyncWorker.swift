@@ -212,7 +212,7 @@ class BackgroundSyncWorker {
         // Build the notification
         let notificationContent = UNMutableNotificationContent()
         notificationContent.body = content ?? "Uploading..."
-        notificationContent.title = title ?? "Pics"
+        notificationContent.title = title ?? "Immich"
         
         // Add it to the Notification center
         let notification = UNNotificationRequest(
@@ -248,7 +248,7 @@ class BackgroundSyncWorker {
         // Build the notification
         let notificationContent = UNMutableNotificationContent()
         notificationContent.body = content ?? "Error running the backup job."
-        notificationContent.title = title ?? "Pics"
+        notificationContent.title = title ?? "Immich"
         
         // Add it to the Notification center
         let notification = UNNotificationRequest(

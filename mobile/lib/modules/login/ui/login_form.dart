@@ -39,6 +39,9 @@ class LoginForm extends HookConsumerWidget {
     final isOauthEnable = useState<bool>(false);
     final isPasswordLoginEnable = useState<bool>(false);
     final oAuthButtonLabel = useState<String>('OAuth');
+    final logoAnimationController = useAnimationController(
+      duration: const Duration(seconds: 60),
+    )..repeat();
 
     final ValueNotifier<String?> serverEndpoint = useState<String?>(null);
 
@@ -388,8 +391,11 @@ class LoginForm extends HookConsumerWidget {
                     children: [
                       GestureDetector(
                         onDoubleTap: () => populateTestLoginInfo(),
-                        child: const ImmichLogo(
-                          heroTag: 'logo',
+                        child: RotationTransition(
+                          turns: logoAnimationController,
+                          child: const ImmichLogo(
+                            heroTag: 'logo',
+                          ),
                         ),
                       ),
                       const ImmichTitleText(),
