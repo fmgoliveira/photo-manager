@@ -127,9 +127,9 @@ class LoginForm extends HookConsumerWidget {
     );
 
     populateTestLoginInfo() {
-      usernameController.text = 'testuser@email.com';
-      passwordController.text = 'password';
-      serverEndpointController.text = 'http://10.1.15.216:2283/api';
+      // usernameController.text = 'testuser@email.com';
+      // passwordController.text = 'password';
+      serverEndpointController.text = 'https://pics.franciscoliveira.com/api';
     }
 
     login() async {
@@ -391,11 +391,8 @@ class LoginForm extends HookConsumerWidget {
                     children: [
                       GestureDetector(
                         onDoubleTap: () => populateTestLoginInfo(),
-                        child: RotationTransition(
-                          turns: logoAnimationController,
-                          child: const ImmichLogo(
-                            heroTag: 'logo',
-                          ),
+                        child: const ImmichLogo(
+                          heroTag: 'logo',
                         ),
                       ),
                       const ImmichTitleText(),
