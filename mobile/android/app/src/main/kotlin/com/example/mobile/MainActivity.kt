@@ -1,4 +1,4 @@
-package app.alextran.immich
+package com.franciscoliveira.pics
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine

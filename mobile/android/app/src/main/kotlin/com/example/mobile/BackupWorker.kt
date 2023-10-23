@@ -1,4 +1,4 @@
-package app.alextran.immich
+package com.franciscoliveira.pics
 
 import android.app.Notification
 import android.app.NotificationChannel

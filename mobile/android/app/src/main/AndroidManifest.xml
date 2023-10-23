@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="app.alextran.immich"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.franciscoliveira.pics"
   xmlns:tools="http://schemas.android.com/tools">
   <application android:label="Pics" android:name=".PicsApp" android:usesCleartextTraffic="true"
     android:icon="@mipmap/ic_launcher" android:requestLegacyExternalStorage="true">
