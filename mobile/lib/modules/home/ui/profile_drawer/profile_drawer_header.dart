@@ -100,9 +100,8 @@ class ProfileDrawerHeader extends HookConsumerWidget {
         gradient: LinearGradient(
           colors: isDarkMode
               ? [
-                  const Color.fromARGB(255, 22, 25, 48),
-                  const Color.fromARGB(255, 13, 13, 13),
-                  const Color.fromARGB(255, 0, 0, 0),
+                  const Color.fromARGB(255, 25, 49, 109),
+                  const Color.fromARGB(255, 30, 31, 34),
                 ]
               : [
                   const Color.fromARGB(255, 216, 219, 238),
