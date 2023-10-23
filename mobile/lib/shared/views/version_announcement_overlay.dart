@@ -75,7 +75,7 @@ class VersionAnnouncementOverlay extends HookConsumerWidget {
                                     const TextSpan(
                                       text: ' Pics ',
                                       style: TextStyle(
-                                        fontFamily: "WorkSans",
+                                        fontFamily: "SnowBurstOne",
                                         color: Colors.blue,
                                         fontWeight: FontWeight.bold,
                                       ),
