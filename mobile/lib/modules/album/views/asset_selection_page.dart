@@ -4,27 +4,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:immich_mobile/modules/album/models/asset_selection_page_result.model.dart';
-import 'package:immich_mobile/modules/asset_viewer/providers/render_list.provider.dart';
 import 'package:immich_mobile/modules/home/ui/asset_grid/asset_grid_data_structure.dart';
 import 'package:immich_mobile/modules/home/ui/asset_grid/immich_asset_grid.dart';
 import 'package:immich_mobile/shared/models/asset.dart';
-import 'package:isar/isar.dart';
+import 'package:immich_mobile/shared/providers/asset.provider.dart';
+import 'package:immich_mobile/shared/providers/user.provider.dart';
 
 class AssetSelectionPage extends HookConsumerWidget {
   const AssetSelectionPage({
     Key? key,
     required this.existingAssets,
-    this.canDeselect = false,
-    required this.query,
+    this.isNewAlbum = false,
   }) : super(key: key);
 
   final Set<Asset> existingAssets;
-  final QueryBuilder<Asset, Asset, QAfterSortBy>? query;
-  final bool canDeselect;
+  final bool isNewAlbum;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final renderList = ref.watch(renderListQueryProvider(query));
+    final currentUser = ref.watch(currentUserProvider);
+    final renderList = ref.watch(remoteAssetsProvider(currentUser?.isarId));
     final selected = useState<Set<Asset>>(existingAssets);
     final selectionEnabledHook = useState(true);
 
@@ -40,8 +39,8 @@ class AssetSelectionPage extends HookConsumerWidget {
           selected.value = assets;
         },
         selectionActive: true,
-        preselectedAssets: existingAssets,
-        canDeselect: canDeselect,
+        preselectedAssets: isNewAlbum ? selected.value : existingAssets,
+        canDeselect: isNewAlbum,
         showMultiSelectIndicator: false,
       );
     }
@@ -66,7 +65,7 @@ class AssetSelectionPage extends HookConsumerWidget {
               ),
         centerTitle: false,
         actions: [
-          if (selected.value.isNotEmpty || canDeselect)
+          if (selected.value.isNotEmpty)
             TextButton(
               onPressed: () {
                 var payload =
@@ -75,7 +74,7 @@ class AssetSelectionPage extends HookConsumerWidget {
                     .popForced<AssetSelectionPageResult>(payload);
               },
               child: Text(
-                canDeselect ? "share_done" : "share_add",
+                "share_add",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Theme.of(context).primaryColor,

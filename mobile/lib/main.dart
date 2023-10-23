@@ -59,7 +59,7 @@ Future<void> initApp() async {
     }
   }
 
-  // Initialize Pics Logger Service
+  // Initialize Immich Logger Service
   ImmichLogger();
 
   var log = Logger("ImmichErrorLogger");
@@ -206,7 +206,7 @@ class ImmichAppState extends ConsumerState<ImmichApp>
       home: Stack(
         children: [
           MaterialApp.router(
-            title: 'Pics',
+            title: 'Immich',
             debugShowCheckedModeBanner: false,
             themeMode: ref.watch(immichThemeProvider),
             darkTheme: immichDarkTheme,

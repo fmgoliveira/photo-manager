@@ -1,1 +1,1 @@
-This is a client app for the self-hostable Pics Server
+This is a client app for the self-hostable Immich Server

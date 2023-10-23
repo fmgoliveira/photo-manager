@@ -16,7 +16,6 @@ import 'package:immich_mobile/modules/album/ui/album_viewer_appbar.dart';
 import 'package:immich_mobile/routing/router.dart';
 import 'package:immich_mobile/shared/models/album.dart';
 import 'package:immich_mobile/shared/models/asset.dart';
-import 'package:immich_mobile/shared/providers/asset.provider.dart';
 import 'package:immich_mobile/shared/ui/immich_loading_indicator.dart';
 import 'package:immich_mobile/shared/ui/user_circle_avatar.dart';
 import 'package:immich_mobile/shared/views/immich_loading_overlay.dart';
@@ -70,8 +69,7 @@ class AlbumViewerPage extends HookConsumerWidget {
           await AutoRouter.of(context).push<AssetSelectionPageResult?>(
         AssetSelectionRoute(
           existingAssets: albumInfo.assets,
-          canDeselect: false,
-          query: getRemoteAssetQuery(ref),
+          isNewAlbum: false,
         ),
       );
 

@@ -172,9 +172,9 @@ class SharingPage extends HookConsumerWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
         title: const Text(
-          'PICS',
+          'IMMICH',
           style: TextStyle(
-            fontFamily: 'WorkSans',
+            fontFamily: 'SnowburstOne',
             fontWeight: FontWeight.bold,
             fontSize: 22,
           ),

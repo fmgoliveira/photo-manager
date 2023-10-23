@@ -252,7 +252,6 @@ class TrashPage extends HookConsumerWidget {
                       listener: selectionListener,
                       selectionActive: selectionEnabledHook.value,
                       showMultiSelectIndicator: false,
-                      showStack: true,
                       topWidget: Padding(
                         padding: const EdgeInsets.only(
                           top: 24,

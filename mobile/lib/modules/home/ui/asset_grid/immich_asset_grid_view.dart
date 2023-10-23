@@ -37,7 +37,6 @@ class ImmichAssetGridView extends StatefulWidget {
   final int heroOffset;
   final bool shrinkWrap;
   final bool showDragScroll;
-  final bool showStack;
 
   const ImmichAssetGridView({
     super.key,
@@ -57,7 +56,6 @@ class ImmichAssetGridView extends StatefulWidget {
     this.heroOffset = 0,
     this.shrinkWrap = false,
     this.showDragScroll = true,
-    this.showStack = false,
   });
 
   @override
@@ -73,7 +71,7 @@ class ImmichAssetGridViewState extends State<ImmichAssetGridView> {
 
   bool _scrolling = false;
   final Set<Asset> _selectedAssets =
-      LinkedHashSet(equals: (a, b) => a.id == b.id, hashCode: (a) => a.id);
+      HashSet(equals: (a, b) => a.id == b.id, hashCode: (a) => a.id);
 
   Set<Asset> _getSelectedAssets() {
     return Set.from(_selectedAssets);
@@ -92,13 +90,7 @@ class ImmichAssetGridViewState extends State<ImmichAssetGridView> {
 
   void _deselectAssets(List<Asset> assets) {
     setState(() {
-      _selectedAssets.removeAll(
-        assets.where(
-          (a) =>
-              widget.canDeselect ||
-              !(widget.preselectedAssets?.contains(a) ?? false),
-        ),
-      );
+      _selectedAssets.removeAll(assets);
       _callSelectionListener(_selectedAssets.isNotEmpty);
     });
   }
@@ -137,7 +129,6 @@ class ImmichAssetGridViewState extends State<ImmichAssetGridView> {
       useGrayBoxPlaceholder: true,
       showStorageIndicator: widget.showStorageIndicator,
       heroOffset: widget.heroOffset,
-      showStack: widget.showStack,
     );
   }
 
@@ -385,6 +376,10 @@ class ImmichAssetGridViewState extends State<ImmichAssetGridView> {
     if (!widget.selectionActive) {
       setState(() {
         _selectedAssets.clear();
+      });
+    } else if (widget.preselectedAssets != null) {
+      setState(() {
+        _selectedAssets.addAll(widget.preselectedAssets!);
       });
     }
   }

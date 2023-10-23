@@ -71,7 +71,6 @@ class _$AppRouter extends RootStackRouter {
           loadAsset: args.loadAsset,
           totalAssets: args.totalAssets,
           heroOffset: args.heroOffset,
-          showStack: args.showStack,
         ),
       );
     },
@@ -154,8 +153,7 @@ class _$AppRouter extends RootStackRouter {
         child: AssetSelectionPage(
           key: args.key,
           existingAssets: args.existingAssets,
-          canDeselect: args.canDeselect,
-          query: args.query,
+          isNewAlbum: args.isNewAlbum,
         ),
         transitionsBuilder: TransitionsBuilders.slideBottom,
         opaque: true,
@@ -713,7 +711,6 @@ class GalleryViewerRoute extends PageRouteInfo<GalleryViewerRouteArgs> {
     required Asset Function(int) loadAsset,
     required int totalAssets,
     int heroOffset = 0,
-    bool showStack = false,
   }) : super(
           GalleryViewerRoute.name,
           path: '/gallery-viewer-page',
@@ -723,7 +720,6 @@ class GalleryViewerRoute extends PageRouteInfo<GalleryViewerRouteArgs> {
             loadAsset: loadAsset,
             totalAssets: totalAssets,
             heroOffset: heroOffset,
-            showStack: showStack,
           ),
         );
 
@@ -737,7 +733,6 @@ class GalleryViewerRouteArgs {
     required this.loadAsset,
     required this.totalAssets,
     this.heroOffset = 0,
-    this.showStack = false,
   });
 
   final Key? key;
@@ -750,11 +745,9 @@ class GalleryViewerRouteArgs {
 
   final int heroOffset;
 
-  final bool showStack;
-
   @override
   String toString() {
-    return 'GalleryViewerRouteArgs{key: $key, initialIndex: $initialIndex, loadAsset: $loadAsset, totalAssets: $totalAssets, heroOffset: $heroOffset, showStack: $showStack}';
+    return 'GalleryViewerRouteArgs{key: $key, initialIndex: $initialIndex, loadAsset: $loadAsset, totalAssets: $totalAssets, heroOffset: $heroOffset}';
   }
 }
 
@@ -968,16 +961,14 @@ class AssetSelectionRoute extends PageRouteInfo<AssetSelectionRouteArgs> {
   AssetSelectionRoute({
     Key? key,
     required Set<Asset> existingAssets,
-    bool canDeselect = false,
-    required QueryBuilder<Asset, Asset, QAfterSortBy>? query,
+    bool isNewAlbum = false,
   }) : super(
           AssetSelectionRoute.name,
           path: '/asset-selection-page',
           args: AssetSelectionRouteArgs(
             key: key,
             existingAssets: existingAssets,
-            canDeselect: canDeselect,
-            query: query,
+            isNewAlbum: isNewAlbum,
           ),
         );
 
@@ -988,21 +979,18 @@ class AssetSelectionRouteArgs {
   const AssetSelectionRouteArgs({
     this.key,
     required this.existingAssets,
-    this.canDeselect = false,
-    required this.query,
+    this.isNewAlbum = false,
   });
 
   final Key? key;
 
   final Set<Asset> existingAssets;
 
-  final bool canDeselect;
-
-  final QueryBuilder<Asset, Asset, QAfterSortBy>? query;
+  final bool isNewAlbum;
 
   @override
   String toString() {
-    return 'AssetSelectionRouteArgs{key: $key, existingAssets: $existingAssets, canDeselect: $canDeselect, query: $query}';
+    return 'AssetSelectionRouteArgs{key: $key, existingAssets: $existingAssets, isNewAlbum: $isNewAlbum}';
   }
 }
 

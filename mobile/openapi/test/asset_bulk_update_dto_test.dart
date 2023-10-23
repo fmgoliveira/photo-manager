@@ -31,16 +31,6 @@ void main() {
       // TODO
     });
 
-    // bool removeParent
-    test('to test the property `removeParent`', () async {
-      // TODO
-    });
-
-    // String stackParentId
-    test('to test the property `stackParentId`', () async {
-      // TODO
-    });
-
 
   });
 
