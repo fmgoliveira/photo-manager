@@ -33,30 +33,25 @@ ThemeData base = ThemeData(
 ThemeData immichLightTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.light,
-  primarySwatch: Colors.indigo,
-  primaryColor: Colors.indigo,
-  hintColor: Colors.indigo,
-  focusColor: Colors.indigo,
-  splashColor: Colors.indigo.withOpacity(0.15),
+  primarySwatch: Colors.blue,
+  primaryColor: Colors.blue,
+  hintColor: Colors.blue,
+  focusColor: Colors.blue,
+  splashColor: Colors.blue.withOpacity(0.15),
   fontFamily: 'WorkSans',
   scaffoldBackgroundColor: immichBackgroundColor,
   snackBarTheme: const SnackBarThemeData(
-    contentTextStyle: TextStyle(
-      fontFamily: 'WorkSans',
-      color: Colors.indigo,
-      fontWeight: FontWeight.bold,
-    ),
-    backgroundColor: Colors.white,
+    contentTextStyle: TextStyle(fontFamily: 'WorkSans'),
   ),
   appBarTheme: AppBarTheme(
     titleTextStyle: const TextStyle(
       fontFamily: 'WorkSans',
-      color: Colors.indigo,
+      color: Colors.blue,
       fontWeight: FontWeight.bold,
       fontSize: 18,
     ),
     backgroundColor: immichBackgroundColor,
-    foregroundColor: Colors.indigo,
+    foregroundColor: Colors.blue,
     elevation: 0,
     scrolledUnderElevation: 0,
     centerTitle: true,
@@ -64,7 +59,7 @@ ThemeData immichLightTheme = ThemeData(
   bottomNavigationBarTheme: BottomNavigationBarThemeData(
     type: BottomNavigationBarType.fixed,
     backgroundColor: immichBackgroundColor,
-    selectedItemColor: Colors.indigo,
+    selectedItemColor: Colors.blue,
   ),
   cardTheme: const CardTheme(
     surfaceTintColor: Colors.transparent,
@@ -76,7 +71,7 @@ ThemeData immichLightTheme = ThemeData(
     displayLarge: TextStyle(
       fontSize: 26,
       fontWeight: FontWeight.bold,
-      color: Colors.indigo,
+      color: Colors.blue,
     ),
     displayMedium: TextStyle(
       fontSize: 14,
@@ -86,7 +81,7 @@ ThemeData immichLightTheme = ThemeData(
     displaySmall: TextStyle(
       fontSize: 12,
       fontWeight: FontWeight.bold,
-      color: Colors.indigo,
+      color: Colors.blue,
     ),
     titleSmall: TextStyle(
       fontSize: 16.0,
@@ -103,7 +98,7 @@ ThemeData immichLightTheme = ThemeData(
   ),
   elevatedButtonTheme: ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
-      backgroundColor: Colors.indigo,
+      backgroundColor: Colors.blue,
       foregroundColor: Colors.white,
     ),
   ),
@@ -117,7 +112,7 @@ ThemeData immichLightTheme = ThemeData(
     color: Colors.white,
   ),
   navigationBarTheme: NavigationBarThemeData(
-    indicatorColor: Colors.indigo.withOpacity(0.15),
+    indicatorColor: Colors.blue.withOpacity(0.15),
     iconTheme: MaterialStatePropertyAll(
       IconThemeData(color: Colors.grey[700]),
     ),
@@ -137,11 +132,11 @@ ThemeData immichLightTheme = ThemeData(
   inputDecorationTheme: const InputDecorationTheme(
     focusedBorder: OutlineInputBorder(
       borderSide: BorderSide(
-        color: Colors.indigo,
+        color: Colors.blue,
       ),
     ),
     labelStyle: TextStyle(
-      color: Colors.indigo,
+      color: Colors.blue,
     ),
     hintStyle: TextStyle(
       fontSize: 14.0,
@@ -149,25 +144,20 @@ ThemeData immichLightTheme = ThemeData(
     ),
   ),
   textSelectionTheme: const TextSelectionThemeData(
-    cursorColor: Colors.indigo,
+    cursorColor: Colors.blue,
   ),
 );
 
 ThemeData immichDarkTheme = ThemeData(
   useMaterial3: true,
   brightness: Brightness.dark,
-  primarySwatch: Colors.indigo,
+  primarySwatch: Colors.blue,
   primaryColor: immichDarkThemePrimaryColor,
   scaffoldBackgroundColor: immichDarkBackgroundColor,
   hintColor: Colors.grey[600],
   fontFamily: 'WorkSans',
-  snackBarTheme: SnackBarThemeData(
-    contentTextStyle: TextStyle(
-      fontFamily: 'WorkSans',
-      color: immichDarkThemePrimaryColor,
-      fontWeight: FontWeight.bold,
-    ),
-    backgroundColor: Colors.grey[900],
+  snackBarTheme: const SnackBarThemeData(
+    contentTextStyle: TextStyle(fontFamily: 'WorkSans'),
   ),
   textButtonTheme: TextButtonThemeData(
     style: TextButton.styleFrom(

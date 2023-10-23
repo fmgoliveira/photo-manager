@@ -1,36 +1,40 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:immich_mobile/shared/models/server_info/server_disk_info.model.dart';
 
-import 'package:immich_mobile/shared/models/server_info/server_info.model.dart';
+import 'package:immich_mobile/shared/models/server_info_state.model.dart';
 import 'package:immich_mobile/shared/services/server_info.service.dart';
-import 'package:immich_mobile/shared/models/server_info/server_config.model.dart';
-import 'package:immich_mobile/shared/models/server_info/server_features.model.dart';
-import 'package:immich_mobile/shared/models/server_info/server_version.model.dart';
+import 'package:openapi/api.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
-class ServerInfoNotifier extends StateNotifier<ServerInfo> {
+class ServerInfoNotifier extends StateNotifier<ServerInfoState> {
   ServerInfoNotifier(this._serverInfoService)
       : super(
-          ServerInfo(
-            serverVersion: const ServerVersion(
+          ServerInfoState(
+            serverVersion: ServerVersionResponseDto(
               major: 0,
+              patch_: 0,
               minor: 0,
-              patch: 0,
             ),
-            serverFeatures: const ServerFeatures(
+            serverFeatures: ServerFeaturesDto(
+              clipEncode: true,
+              configFile: false,
+              facialRecognition: true,
               map: true,
+              oauth: false,
+              oauthAutoLaunch: false,
+              passwordLogin: true,
+              search: true,
+              sidecar: true,
+              tagImage: true,
               trash: true,
+              reverseGeocoding: true,
             ),
-            serverConfig: const ServerConfig(
+            serverConfig: ServerConfigDto(
+              loginPageMessage: "",
               mapTileUrl: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+              oauthButtonText: "",
               trashDays: 30,
-            ),
-            serverDiskInfo: const ServerDiskInfo(
-              diskAvailable: "0",
-              diskSize: "0",
-              diskUse: "0",
-              diskUsagePercentage: 0,
+              isInitialized: false,
             ),
             isVersionMismatch: false,
             versionMismatchErrorMessage: "",
@@ -46,7 +50,8 @@ class ServerInfoNotifier extends StateNotifier<ServerInfo> {
   }
 
   getServerVersion() async {
-    final serverVersion = await _serverInfoService.getServerVersion();
+    ServerVersionResponseDto? serverVersion =
+        await _serverInfoService.getServerVersion();
 
     if (serverVersion == null) {
       state = state.copyWith(
@@ -89,7 +94,8 @@ class ServerInfoNotifier extends StateNotifier<ServerInfo> {
   }
 
   getServerFeatures() async {
-    final serverFeatures = await _serverInfoService.getServerFeatures();
+    ServerFeaturesDto? serverFeatures =
+        await _serverInfoService.getServerFeatures();
     if (serverFeatures == null) {
       return;
     }
@@ -97,7 +103,7 @@ class ServerInfoNotifier extends StateNotifier<ServerInfo> {
   }
 
   getServerConfig() async {
-    final serverConfig = await _serverInfoService.getServerConfig();
+    ServerConfigDto? serverConfig = await _serverInfoService.getServerConfig();
     if (serverConfig == null) {
       return;
     }
@@ -120,6 +126,6 @@ class ServerInfoNotifier extends StateNotifier<ServerInfo> {
 }
 
 final serverInfoProvider =
-    StateNotifierProvider<ServerInfoNotifier, ServerInfo>((ref) {
+    StateNotifierProvider<ServerInfoNotifier, ServerInfoState>((ref) {
   return ServerInfoNotifier(ref.watch(serverInfoServiceProvider));
 });

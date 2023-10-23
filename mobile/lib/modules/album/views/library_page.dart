@@ -33,9 +33,9 @@ class LibraryPage extends HookConsumerWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
         title: const Text(
-          'IMMICH',
+          'PICS',
           style: TextStyle(
-            fontFamily: 'SnowburstOne',
+            fontFamily: 'WorkSans',
             fontWeight: FontWeight.bold,
             fontSize: 22,
           ),

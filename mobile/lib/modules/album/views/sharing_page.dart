@@ -147,13 +147,13 @@ class SharingPage extends HookConsumerWidget {
             Expanded(
               child: ElevatedButton.icon(
                 onPressed: () =>
-                    AutoRouter.of(context).push(const SharedLinkRoute()),
+                    AutoRouter.of(context).push(const PartnerRoute()),
                 icon: const Icon(
-                  Icons.link,
+                  Icons.swap_horizontal_circle_outlined,
                   size: 20,
                 ),
                 label: const Text(
-                  "sharing_silver_appbar_shared_links",
+                  "sharing_silver_appbar_share_partner",
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 11,
@@ -172,24 +172,13 @@ class SharingPage extends HookConsumerWidget {
         centerTitle: true,
         automaticallyImplyLeading: false,
         title: const Text(
-          'IMMICH',
+          'PICS',
           style: TextStyle(
-            fontFamily: 'SnowburstOne',
+            fontFamily: 'WorkSans',
             fontWeight: FontWeight.bold,
             fontSize: 22,
           ),
         ),
-        actions: [
-          IconButton(
-            splashRadius: 25,
-            iconSize: 20,
-            icon: const Icon(
-              Icons.swap_horizontal_circle_outlined,
-              size: 20,
-            ),
-            onPressed: () => AutoRouter.of(context).push(const PartnerRoute()),
-          ),
-        ],
       );
     }
 

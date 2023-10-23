@@ -20,7 +20,7 @@ class AssetStackNotifier extends StateNotifier<List<Asset>> {
     }
   }
 
-  void removeChild(int index) {
+  removeChild(int index) {
     if (index < state.length) {
       state.removeAt(index);
     }
@@ -46,6 +46,5 @@ final assetStackProvider =
       .isArchivedEqualTo(false)
       .isTrashedEqualTo(false)
       .stackParentIdEqualTo(asset.remoteId)
-      .sortByFileCreatedAtDesc()
       .findAll();
 });

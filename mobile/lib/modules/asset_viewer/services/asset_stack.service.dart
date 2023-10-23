@@ -10,7 +10,7 @@ class AssetStackService {
 
   final ApiService _api;
 
-  Future<void> updateStack(
+  updateStack(
     Asset parentAsset, {
     List<Asset>? childrenToAdd,
     List<Asset>? childrenToRemove,
@@ -46,7 +46,7 @@ class AssetStackService {
     }
   }
 
-  Future<void> updateStackParent(Asset oldParent, Asset newParent) async {
+  updateStackParent(Asset oldParent, Asset newParent) async {
     // Guard [local asset]
     if (oldParent.remoteId == null || newParent.remoteId == null) {
       return;
