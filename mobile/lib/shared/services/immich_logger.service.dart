@@ -108,7 +108,7 @@ class ImmichLogger {
     // Share file
     await Share.shareXFiles(
       [XFile(filePath)],
-      subject: "Immich logs $dateTime",
+      subject: "Pics logs $dateTime",
       sharePositionOrigin: Rect.zero,
     ).then(
       (value) => logFile.delete(),

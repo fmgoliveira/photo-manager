@@ -59,7 +59,7 @@ Future<void> initApp() async {
     }
   }
 
-  // Initialize Immich Logger Service
+  // Initialize Pics Logger Service
   ImmichLogger();
 
   var log = Logger("ImmichErrorLogger");
@@ -110,19 +110,19 @@ Widget getMainWidget(Isar db) {
     fallbackLocale: locales.first,
     child: ProviderScope(
       overrides: [dbProvider.overrideWithValue(db)],
-      child: const ImmichApp(),
+      child: const PicsApp(),
     ),
   );
 }
 
-class ImmichApp extends ConsumerStatefulWidget {
-  const ImmichApp({super.key});
+class PicsApp extends ConsumerStatefulWidget {
+  const PicsApp({super.key});
 
   @override
-  ImmichAppState createState() => ImmichAppState();
+  PicsAppState createState() => PicsAppState();
 }
 
-class ImmichAppState extends ConsumerState<ImmichApp>
+class PicsAppState extends ConsumerState<PicsApp>
     with WidgetsBindingObserver {
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
@@ -206,7 +206,7 @@ class ImmichAppState extends ConsumerState<ImmichApp>
       home: Stack(
         children: [
           MaterialApp.router(
-            title: 'Immich',
+            title: 'Pics',
             debugShowCheckedModeBanner: false,
             themeMode: ref.watch(immichThemeProvider),
             darkTheme: immichDarkTheme,

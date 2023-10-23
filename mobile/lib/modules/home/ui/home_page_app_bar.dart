@@ -99,9 +99,9 @@ class HomePageAppBar extends ConsumerWidget implements PreferredSizeWidget {
         },
       ),
       title: const Text(
-        'IMMICH',
+        'PICS',
         style: TextStyle(
-          fontFamily: 'SnowburstOne',
+          fontFamily: 'WorkSans',
           fontWeight: FontWeight.bold,
           fontSize: 22,
         ),
@@ -138,7 +138,7 @@ class HomePageAppBar extends ConsumerWidget implements PreferredSizeWidget {
                       label: const Icon(
                         Icons.cloud_off_rounded,
                         size: 8,
-                        color: Colors.indigo,
+                        color: Colors.blue,
                       ),
                       child: Icon(
                         Icons.backup_rounded,
