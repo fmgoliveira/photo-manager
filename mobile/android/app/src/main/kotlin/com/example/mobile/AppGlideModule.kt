@@ -1,4 +1,4 @@
-package com.franciscoliveira.pics
+package app.alextran.immich
 
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule

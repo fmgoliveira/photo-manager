@@ -1,10 +1,10 @@
-package com.franciscoliveira.pics
+package app.alextran.immich
 
 import android.app.Application
 import androidx.work.Configuration
 import androidx.work.WorkManager
 
-class PicsApp : Application() {
+class ImmichApp : Application() {
     override fun onCreate() {
         super.onCreate()
         val config = Configuration.Builder().build()

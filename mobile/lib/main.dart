@@ -110,19 +110,19 @@ Widget getMainWidget(Isar db) {
     fallbackLocale: locales.first,
     child: ProviderScope(
       overrides: [dbProvider.overrideWithValue(db)],
-      child: const PicsApp(),
+      child: const ImmichApp(),
     ),
   );
 }
 
-class PicsApp extends ConsumerStatefulWidget {
-  const PicsApp({super.key});
+class ImmichApp extends ConsumerStatefulWidget {
+  const ImmichApp({super.key});
 
   @override
   ImmichAppState createState() => ImmichAppState();
 }
 
-class ImmichAppState extends ConsumerState<PicsApp>
+class ImmichAppState extends ConsumerState<ImmichApp>
     with WidgetsBindingObserver {
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
