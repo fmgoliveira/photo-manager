@@ -188,7 +188,7 @@ class CurrentUploadingAssetInfoBox extends HookConsumerWidget {
               SizedBox(
                 width: 110,
                 child: Text(
-                  "Immich Upload",
+                  "Pics Upload",
                   style: context.textTheme.labelSmall,
                 ),
               ),

@@ -4,15 +4,15 @@
   <dict>
     <key>BGTaskSchedulerPermittedIdentifiers</key>
     <array>
-      <string>app.alextran.immich.backgroundFetch</string>
-      <string>app.alextran.immich.backgroundProcessing</string>
+      <string>com.franciscoliveira.pics.backgroundFetch</string>
+      <string>com.franciscoliveira.pics.backgroundProcessing</string>
     </array>
     <key>CADisableMinimumFrameDurationOnPhone</key>
     <true />
     <key>CFBundleDevelopmentRegion</key>
     <string>$(DEVELOPMENT_LANGUAGE)</string>
     <key>CFBundleDisplayName</key>
-    <string>Immich</string>
+    <string>Pics</string>
     <key>CFBundleExecutable</key>
     <string>$(EXECUTABLE_NAME)</string>
     <key>CFBundleIdentifier</key>

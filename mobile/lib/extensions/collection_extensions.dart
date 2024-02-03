@@ -43,7 +43,7 @@ extension IntListExtension on Iterable<int> {
 }
 
 extension AssetListExtension on Iterable<Asset> {
-  /// Returns the assets that are already available in the Immich server
+  /// Returns the assets that are already available in the Pics server
   Iterable<Asset> remoteOnly({
     void Function()? errorCallback,
   }) {
@@ -84,7 +84,7 @@ extension AssetListExtension on Iterable<Asset> {
     return this;
   }
 
-  /// Filters out offline assets and returns those that are still accessible by the Immich server
+  /// Filters out offline assets and returns those that are still accessible by the Pics server
   Iterable<Asset> nonOfflineOnly({
     void Function()? errorCallback,
   }) {

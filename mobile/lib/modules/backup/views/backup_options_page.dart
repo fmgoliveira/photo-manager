@@ -474,7 +474,7 @@ class BackupOptionsPage extends HookConsumerWidget {
             style: TextStyle(fontWeight: FontWeight.bold),
           ),
           subtitle: const Text(
-            "Photos that are stored on iCloud will not be uploaded to the Immich server",
+            "Photos that are stored on iCloud will not be uploaded to the Pics server",
           ),
           value: ignoreIcloudAssets.value,
           onChanged: switchChanged,

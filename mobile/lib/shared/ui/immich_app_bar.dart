@@ -159,7 +159,7 @@ class ImmichAppBar extends ConsumerWidget implements PreferredSizeWidget {
               Container(
                 margin: const EdgeInsets.only(left: 10),
                 child: const Text(
-                  'IMMICH',
+                  'PICS',
                   style: TextStyle(
                     fontFamily: 'SnowburstOne',
                     fontWeight: FontWeight.bold,

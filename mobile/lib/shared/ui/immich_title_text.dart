@@ -14,7 +14,7 @@ class ImmichTitleText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Text(
-      'IMMICH',
+      'PICS',
       style: TextStyle(
         fontFamily: 'SnowburstOne',
         fontWeight: FontWeight.bold,

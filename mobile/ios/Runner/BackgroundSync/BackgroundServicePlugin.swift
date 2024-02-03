@@ -19,17 +19,17 @@ class BackgroundServicePlugin: NSObject, FlutterPlugin {
     }
 
     //  Pause the application in XCode, then enter
-    // e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"app.alextran.immich.backgroundFetch"]
+    // e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.franciscoliveira.pics.backgroundFetch"]
     // or
-    // e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"app.alextran.immich.backgroundProcessing"]
+    // e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.franciscoliveira.pics.backgroundProcessing"]
     // Then resume the application see the background code run
     // Tested on a physical device, not a simulator
     // This will submit either the Fetch or Processing command to the BGTaskScheduler for immediate processing.
-    // In my tests, I can only get app.alextran.immich.backgroundProcessing simulated by running the above command
+    // In my tests, I can only get com.franciscoliveira.pics.backgroundProcessing simulated by running the above command
     
     // This is the task ID in Info.plist to register as our background task ID
-    public static let backgroundFetchTaskID = "app.alextran.immich.backgroundFetch"
-    public static let backgroundProcessingTaskID = "app.alextran.immich.backgroundProcessing"
+    public static let backgroundFetchTaskID = "com.franciscoliveira.pics.backgroundFetch"
+    public static let backgroundProcessingTaskID = "com.franciscoliveira.pics.backgroundProcessing"
     
     // Establish communication with the main isolate and set up the channel call
     // to this BackgroundServicePlugion()
@@ -266,7 +266,7 @@ class BackgroundServicePlugin: NSObject, FlutterPlugin {
     }
   
     // Checks the status of the Background App Refresh from the system
-    // Returns true if the service is enabled for Immich, and false otherwise
+    // Returns true if the service is enabled for Pics, and false otherwise
     func handleBackgroundRefreshStatus(call: FlutterMethodCall, result: FlutterResult) {
         switch UIApplication.shared.backgroundRefreshStatus {
         case .available:

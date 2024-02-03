@@ -52,7 +52,7 @@ class ImmichAppBarDialog extends HookConsumerWidget {
             child: Align(
               alignment: Alignment.center,
               child: Text(
-                'IMMICH',
+                'PICS',
                 style: TextStyle(
                   fontFamily: 'SnowburstOne',
                   fontWeight: FontWeight.bold,
