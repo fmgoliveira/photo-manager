@@ -54,7 +54,7 @@ class ImmichAppBarDialog extends HookConsumerWidget {
               child: Text(
                 'PICS',
                 style: TextStyle(
-                  fontFamily: 'SnowburstOne',
+                  fontFamily: 'WorkSans',
                   fontWeight: FontWeight.bold,
                   color: context.primaryColor,
                   fontSize: 16,
@@ -270,7 +270,7 @@ class ImmichAppBarDialog extends HookConsumerWidget {
               buildAppLogButton(),
               buildSettingButton(),
               buildSignOutButton(),
-              buildFooter(),
+              // buildFooter(),
             ],
           ),
         ),

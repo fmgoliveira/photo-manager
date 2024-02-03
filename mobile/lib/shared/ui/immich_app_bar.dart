@@ -161,7 +161,7 @@ class ImmichAppBar extends ConsumerWidget implements PreferredSizeWidget {
                 child: const Text(
                   'PICS',
                   style: TextStyle(
-                    fontFamily: 'SnowburstOne',
+                    fontFamily: 'WorkSans',
                     fontWeight: FontWeight.bold,
                     fontSize: 24,
                   ),
