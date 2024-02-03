@@ -44,8 +44,8 @@
   >
     <a data-sveltekit-preload-data="hover" class="mx-4 flex place-items-center gap-2 md:mx-6" href={AppRoute.PHOTOS}>
       <ImmichLogo height="35" width="35" />
-      <h1 class="hidden font-immich-title text-2xl text-immich-primary dark:text-immich-dark-primary md:block">
-        IMMICH
+      <h1 class="hidden  text-2xl text-immich-primary dark:text-immich-dark-primary md:block">
+        PICS
       </h1>
     </a>
     <div class="flex justify-between gap-16 pr-6">

@@ -22,7 +22,7 @@ export const load = (async () => {
   return {
     meta: {
       title: 'Welcome 🎉',
-      description: 'Immich Web Interface',
+      description: 'Pics Web Interface',
     },
   };
 }) satisfies PageLoad;

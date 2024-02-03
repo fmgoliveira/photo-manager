@@ -1,5 +1,5 @@
 <svelte:head>
-  <title>Opps! Error - Immich</title>
+  <title>Opps! Error - Pics</title>
 </svelte:head>
 
 <section class="flex h-screen w-screen place-content-center place-items-center">

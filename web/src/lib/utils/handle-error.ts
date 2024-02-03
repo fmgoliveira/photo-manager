@@ -25,7 +25,7 @@ export async function handleError(error: unknown, message: string) {
 
   let serverMessage = await getServerErrorMessage(error);
   if (serverMessage) {
-    serverMessage = `${String(serverMessage).slice(0, 75)}\n(Immich Server Error)`;
+    serverMessage = `${String(serverMessage).slice(0, 75)}\n(Pics Server Error)`;
   }
 
   notificationController.show({

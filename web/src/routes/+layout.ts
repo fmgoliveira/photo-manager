@@ -6,7 +6,7 @@ export const csr = true;
 export const load = (async () => {
   return {
     meta: {
-      title: 'Immich',
+      title: 'Pics',
     },
   };
 }) satisfies LayoutLoad;

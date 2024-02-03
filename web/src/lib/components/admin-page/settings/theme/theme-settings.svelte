@@ -22,7 +22,7 @@
         <SettingTextarea
           {disabled}
           label="Custom CSS"
-          desc="Cascading Style Sheets allow the design of Immich to be customized."
+          desc="Cascading Style Sheets allow the design of Pics to be customized."
           bind:value={config.theme.customCss}
           required={true}
           isEdited={config.theme.customCss !== savedConfig.theme.customCss}

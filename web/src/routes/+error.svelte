@@ -21,7 +21,7 @@
     <div class="flex place-items-center border-b px-6 py-4 dark:border-b-immich-dark-gray">
       <a class="flex place-items-center gap-2 hover:cursor-pointer" href="/photos">
         <ImmichLogo height="35" width="35" />
-        <h1 class="font-immich-title text-2xl text-immich-primary dark:text-immich-dark-primary">IMMICH</h1>
+        <h1 class=" text-2xl text-immich-primary dark:text-immich-dark-primary">PICS</h1>
       </a>
     </div>
   </section>

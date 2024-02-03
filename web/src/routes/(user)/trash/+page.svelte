@@ -109,7 +109,7 @@
     on:cancel={() => (isShowEmptyConfirmation = false)}
   >
     <svelte:fragment slot="prompt">
-      <p>Are you sure you want to empty the trash? This will remove all the assets in trash permanently from Immich.</p>
+      <p>Are you sure you want to empty the trash? This will remove all the assets in trash permanently from Pics.</p>
       <p><b>You cannot undo this action!</b></p>
     </svelte:fragment>
   </ConfirmDialogue>

@@ -99,7 +99,7 @@
     {
       item: ThemeSettings,
       title: 'Theme Settings',
-      subtitle: 'Manage customization of the Immich web interface',
+      subtitle: 'Manage customization of the Pics web interface',
       isOpen: openSettings.includes('theme'),
     },
     {

@@ -27,7 +27,7 @@
   }
 </script>
 
-<SettingAccordion title="Appearance" subtitle="Manage your Immich appearance">
+<SettingAccordion title="Appearance" subtitle="Manage your Pics appearance">
   <AppearanceSettings />
 </SettingAccordion>
 
